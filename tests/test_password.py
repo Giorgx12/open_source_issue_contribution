@@ -22,3 +22,4 @@ def test_symbols_gen(){
 
 def test_no_symbols_gen(){
     assert not any(c in string.punctuation for c in generate(200))
+}

@@ -18,8 +18,8 @@ New to open source? This repo is built for you. No experience with big codebases
 1. **Pick an issue** with the [`good first issue`](../../labels/good%20first%20issue) label and comment `I'd like to work on this`.
 2. **Fork** this repo (top right button) and clone it:
    ```bash
-   git clone https://github.com/<your-username>/issue.git
-   cd issue
+   git clone https://github.com/<your-username>/open_source_issue_contribution.git
+   cd open_source_issue_contribution
    ```
 3. **Set up**:
    ```bash

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fixit"
+version = "0.1.0"
+description = "Beginner-friendly Python CLI with planted bugs to practice open source contributions"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+fixit = "fixit.cli:main"
+
+[tool.setuptools]
+packages = ["fixit"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

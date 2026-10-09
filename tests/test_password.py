@@ -1,5 +1,6 @@
 import pytest
 from fixit.password import generate
+import string
 
 
 @pytest.mark.xfail(reason="Known bug: password is one character too short")

@@ -8,4 +8,4 @@ def is_palindrome(text: str) -> bool:
 
 def reverse_words(text: str) -> str:
     """Reverse the order of words in text."""
-    return " ".join(reversed(text.split(" ")))
+    return " ".join(reversed(text.split()))

@@ -6,7 +6,6 @@ def test_count_words_simple():
     assert count_words("hello world") == 2
 
 
-@pytest.mark.xfail(reason="Known bug: multiple spaces are counted as words")
 def test_count_words_extra_spaces():
     assert count_words("hello    world") == 2
 

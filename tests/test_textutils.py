@@ -16,6 +16,5 @@ def test_palindrome_ignores_punctuation():
     assert is_palindrome("A man, a plan, a canal: Panama")
 
 
-@pytest.mark.xfail(reason="Known bug: extra spaces create empty words")
 def test_reverse_words_extra_spaces():
     assert reverse_words("hello   world") == "world hello"

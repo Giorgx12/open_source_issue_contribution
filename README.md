@@ -32,7 +32,8 @@ New to open source? This repo is built for you. No experience with big codebases
    *And if I'm Windows user?:*
    * Command prompt
    ```cmd
-   python -m venv venv && venv\Scripts\activate
+   python -m venv venv
+   venv\Scripts\activate
    pip install -e ".[dev]"
    pytest
    ```

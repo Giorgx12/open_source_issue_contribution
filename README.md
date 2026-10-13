@@ -21,22 +21,31 @@ New to open source? This repo is built for you. No experience with big codebases
    git clone https://github.com/<your-username>/open_source_issue_contribution.git
    cd open_source_issue_contribution
    ```
-3. **Set up**:
-4.  *Linux*:
+3. **Set up** on your PC:
+   
+   *I'm on Linux:*
    ```bash
    python -m venv venv && source venv/bin/activate
    pip install -e ".[dev]"
    pytest
    ```
-   *Windows*:
-   ```bash
-   python -m venv venv && source venv\Scripts\activate
+   *And if I'm Windows user?:*
+   * Command prompt
+   ```cmd
+   python -m venv venv && venv\Scripts\activate
+   pip install -e ".[dev]"
+   pytest
    ```
-5. **Create a branch**, fix the issue, and remove the matching `xfail` marker in the tests:
+   * Windows PowerShell 
+    ```ps1
+   python -m venv venv && .\venv\Scripts\activate
+   pip install -e ".[dev]"
+   pytest
+4. **Create a branch**, fix the issue, and remove the matching `xfail` marker in the tests:
    ```bash
    git checkout -b fix-issue-12
    ```
-6. **Run the tests** (`pytest`), commit, push and open a **Pull Request** mentioning `Closes #12`.
+5. **Run the tests** (`pytest`), commit, push and open a **Pull Request** mentioning `Closes #12`.
 
 Full guide: [CONTRIBUTING.md](CONTRIBUTING.md)
 
@@ -53,6 +62,13 @@ fixit reverse "open source is fun"
 
 Some of these will give you wrong answers. That is the point. 😉
 
+## 🔧 Trouble shooting
+
+Error: python not found:
+No problem. Just be sure to have downloaded Python. If you have but path can't find it, add it.
+```bash
+setx PATH "%PATH%;C:\path\to\your\python"
+```
 ## 🗂 Issue labels
 
 | Label | Meaning |

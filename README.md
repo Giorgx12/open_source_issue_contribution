@@ -33,13 +33,13 @@ New to open source? This repo is built for you. No experience with big codebases
    * Command prompt
    ```cmd
    python -m venv venv
-   venv\Scripts\activate
+   venv\Scripts\activate.bat
    pip install -e ".[dev]"
    pytest
    ```
    * Windows PowerShell 
     ```ps1
-   python -m venv venv && .\venv\Scripts\activate
+   python -m venv venv && .\venv\Scripts\activate.ps1
    pip install -e ".[dev]"
    pytest
 4. **Create a branch**, fix the issue, and remove the matching `xfail` marker in the tests:

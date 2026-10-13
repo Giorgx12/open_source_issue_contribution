@@ -22,16 +22,21 @@ New to open source? This repo is built for you. No experience with big codebases
    cd open_source_issue_contribution
    ```
 3. **Set up**:
+4.  *Linux*:
    ```bash
-   python -m venv venv && source venv/bin/activate   # Windows: venv\Scripts\activate
+   python -m venv venv && source venv/bin/activate
    pip install -e ".[dev]"
    pytest
    ```
-4. **Create a branch**, fix the issue, and remove the matching `xfail` marker in the tests:
+   *Windows*:
+   ```bash
+   python -m venv venv && source venv\Scripts\activate
+   ```
+5. **Create a branch**, fix the issue, and remove the matching `xfail` marker in the tests:
    ```bash
    git checkout -b fix-issue-12
    ```
-5. **Run the tests** (`pytest`), commit, push and open a **Pull Request** mentioning `Closes #12`.
+6. **Run the tests** (`pytest`), commit, push and open a **Pull Request** mentioning `Closes #12`.
 
 Full guide: [CONTRIBUTING.md](CONTRIBUTING.md)
 
